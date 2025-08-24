@@ -1,0 +1,87 @@
+/* Modern green UI - Light Mode */
+:root {
+  --bg: #ffffff;
+  --card: #ffffff;
+  --muted: #507e67;
+  --primary: #22c55e;
+  --primary-600: #16a34a;
+  --primary-700: #15803d;
+  --text: #0f1720;
+  --subtext: #5b6f63;
+  --border: #e6f0ea;
+}
+
+#root {
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 960px;
+}
+
+body { background: var(--bg); color: var(--text); }
+
+.app-shell { display: flex; justify-content: center; }
+
+.card {
+  width: 100%;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  color: var(--text);
+}
+
+.header { text-align: left; margin-bottom: 16px; }
+.header h1 { margin: 0; font-size: 28px; color: var(--text); }
+.subtitle { margin: 4px 0 0; color: var(--subtext); font-size: 14px; }
+
+.row { display: flex; gap: 12px; align-items: center; margin-top: 12px; }
+.row.between { justify-content: space-between; }
+.row.actions { justify-content: center; margin-top: 16px; }
+
+.input {
+  flex: 1;
+  min-width: 280px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  outline: none;
+  background: #ffffff;
+  color: var(--text);
+}
+.input:focus { border-color: var(--primary); box-shadow: 0 0 0 3px rgba(34,197,94,0.15); }
+
+.btn {
+  background: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.btn:hover { background: var(--primary-600); }
+.btn:disabled { background: #bfead3; color: #3b6a56; cursor: not-allowed; }
+
+.btn.outline {
+  background: transparent;
+  color: var(--primary-700);
+  border: 1px solid var(--border);
+}
+.btn.outline:hover { border-color: var(--primary); color: var(--primary-700); }
+
+.btn.secondary { background: #e8f7ef; color: var(--primary-700); }
+.btn.secondary:hover { background: #dbf2e7; }
+
+.toggle { display: flex; gap: 8px; align-items: center; color: var(--subtext); }
+.status { color: var(--subtext); }
+.status.on { color: var(--primary-700); font-weight: 700; }
+
+.transcript { margin-top: 16px; border: 1px dashed var(--border); border-radius: 10px; padding: 12px; background: #fafdfb; }
+.transcript .label { font-size: 12px; color: var(--subtext); margin-bottom: 6px; text-align: left; }
+.transcript .text { font-size: 14px; color: var(--text); text-align: left; white-space: pre-wrap; }
+
+.hint { margin-top: 8px; color: var(--subtext); font-size: 12px; text-align: left; }
+
+/* Remove old styles no longer used */
+.logo, .logo.react, .controls, .read-the-docs, h1 + p, p { all: unset; }

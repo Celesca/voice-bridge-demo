@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: voice-bridge-app
+    ports:
+      - '8787:8787'
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+
+  ngrok:
+    image: ngrok/ngrok:latest
+    container_name: voice-bridge-ngrok
+    command: http app:8787
+    environment:
+      # Optional: set your authtoken to avoid session limits
+      - NGROK_AUTHTOKEN=${NGROK_AUTHTOKEN}
+    ports:
+      - '4040:4040' # ngrok web UI
+    depends_on:
+      - app
+    restart: unless-stopped
