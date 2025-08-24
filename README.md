@@ -1,14 +1,11 @@
 <p align="center">
-  <img src="public/vite.svg" alt="Voice-Bridge Logo" width="96" height="96" />
+  <img src="https://static.wixstatic.com/media/4d1028_ee09050f15a844459a6b1b2366fb3c17~mv2.png/v1/fit/w_2500,h_1330,al_c/4d1028_ee09050f15a844459a6b1b2366fb3c17~mv2.png" alt="Voice-Bridge Logo" width="140" height="140" />
 </p>
 <h1 align="center">Voice-Bridge</h1>
-<p align="center">Thai speech detection in the browser, LINE webhook + push notifications, and AI action summaries via OpenRouter.</p>
+<p align="center">Thai speech detection for deaf worker in the browser, LINE webhook + push notifications, and AI action summaries via OpenRouter.</p>
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/43c65f6f-bf21-481d-b31d-012b1496a8f7" width="720" muted autoplay loop playsinline controls></video>
-</p>
-<p align="center">
-  <a href="https://github.com/user-attachments/assets/43c65f6f-bf21-481d-b31d-012b1496a8f7">Watch demo (fallback link)</a>
+  <video src="https://github.com/user-attachments/assets/b7976cda-ff5e-4a92-a4a3-0cf4e71224ea" width="720" muted autoplay loop playsinline controls></video>
 </p>
 
 ## What it does
